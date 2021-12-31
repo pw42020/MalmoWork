@@ -148,6 +148,13 @@ print("Mission running ", end=' ')
 
 # ADD YOUR CODE HERE
 # TO GET YOUR AGENT TO THE DIAMOND BLOCK
+agent_host.sendCommand("hotbar 9.1")
+agent_host.sendCommand("hotbar 9.0")
+agent_host.sendCommand("move 1")
+agent_host.sendCommand("pitch 0.2")
+time.sleep(1)
+agent_host.sendCommand("pitch 0")
+agent_host.sendCommand("attack 1")
 
 # Loop until mission ends:
 while world_state.is_mission_running:
